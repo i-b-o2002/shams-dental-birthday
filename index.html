@@ -380,8 +380,8 @@ style="right:10%;bottom:15%;animation-delay:.7s;">
 <input
 id="birthdayInput"
 type="text"
-inputmode="numeric"
-placeholder="يوم-شهر-سنة"
+inputmode="kaybord"
+placeholder="يوم-شهر"
 maxlength="10"
 >
 
@@ -572,10 +572,10 @@ checkBirthday.onclick = function() {
     */
 
     if (
-        entered === "05-09-2002" ||
-        entered === "5-9-2002" ||
-        entered === "05/09/2002" ||
-        entered === "5/9/2002"
+        entered === "05-09" ||
+        entered === "5-9" ||
+        entered === "05/09" ||
+        entered === "5/9"
     ) {
 
         dateScreen.classList.add("hidden");
