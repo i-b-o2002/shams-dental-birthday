@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>هدية لشمس 🎁🤍</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+
+    background:
+        radial-gradient(circle at top, #fff5fb, transparent 45%),
+        linear-gradient(135deg, #f8f3ff, #fff8f3);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+}
+
+
+/* =========================
+   MAIN CARD
+========================= */
+
+.card {
+    background: rgba(255,255,255,0.94);
+
+    border-radius: 30px;
+
+    padding: 35px 25px;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,0.12);
+
+    text-align: center;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   FLOATING EMOJIS
+========================= */
+
+.float {
+    position: absolute;
+
+    font-size: 23px;
+
+    animation:
+        float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+}
+
+
+/* =========================
+   ICON
+========================= */
+
+.icon {
+    font-size: 65px;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   TITLES
+========================= */
+
+h1 {
+    font-size: 30px;
+
+    margin:
+        10px 0 15px;
+}
+
+h2 {
+    font-size: 23px;
+}
+
+.subtitle {
+    color: #777;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   DATE INPUT
+========================= */
+
+input {
+    width: 100%;
+
+    max-width: 330px;
+
+    padding: 15px;
+
+    margin-top: 20px;
+
+    border-radius: 15px;
+
+    border: 2px solid #eaddea;
+
+    outline: none;
+
+    font-size: 18px;
+
+    text-align: center;
+
+    direction: ltr;
+}
+
+input:focus {
+    border-color: #c9a8c9;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+button {
+    border: none;
+
+    border-radius: 30px;
+
+    padding: 14px 28px;
+
+    margin-top: 20px;
+
+    background: #e8d8eb;
+
+    color: #463647;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   ERROR
+========================= */
+
+.error {
+    margin-top: 15px;
+
+    color: #b85c78;
+
+    font-size: 14px;
+
+    min-height: 22px;
+}
+
+
+/* =========================
+   HIDDEN
+========================= */
+
+.hidden {
+    display: none;
+}
+
+
+/* =========================
+   SURPRISE
+========================= */
+
+.message {
+    font-size: 17px;
+
+    line-height: 2;
+
+    text-align: right;
+
+    margin-top: 20px;
+}
+
+.highlight {
+    background: #fff3f8;
+
+    border-radius: 20px;
+
+    padding: 18px;
+
+    margin-top: 20px;
+
+    line-height: 1.9;
+}
+
+
+/* =========================
+   FINAL
+========================= */
+
+.final {
+    margin-top: 25px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #eee;
+}
+
+.footer {
+    margin-top: 25px;
+
+    color: #999;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   CONFETTI
+========================= */
+
+.confetti {
+    position: fixed;
+
+    top: -30px;
+
+    pointer-events: none;
+
+    animation:
+        fall linear forwards;
+
+    z-index: 999;
+}
+
+@keyframes fall {
+
+    to {
+        transform:
+            translateY(110vh)
+            rotate(720deg);
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:450px) {
+
+    .card {
+        padding: 30px 18px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .message {
+        font-size: 15px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<div class="card">
+
+
+<!-- Floating decorations -->
+
+<span
+class="float"
+style="left:8%;top:8%;">
+🤍
+</span>
+
+<span
+class="float"
+style="right:9%;top:10%;animation-delay:.5s;">
+🎀
+</span>
+
+<span
+class="float"
+style="left:12%;bottom:12%;animation-delay:1s;">
+✨
+</span>
+
+<span
+class="float"
+style="right:10%;bottom:15%;animation-delay:.7s;">
+🌷
+</span>
+
+
+
+<!-- =========================
+     DATE SCREEN
+========================= -->
+
+<div id="dateScreen">
+
+
+<div class="icon">
+🎁
+</div>
+
+
+<h1>
+هدية خاصة لشمس 🤍
+</h1>
+
+
+<div class="subtitle">
+
+قبل ما تستلمين هديتج...
+
+<br>
+
+عندي سؤال بسيط أتأكد بيه إن الهدية وصلت للشخص الصح 😂
+
+<br><br>
+
+<strong>
+شنو تاريخ ميلادج؟ 🎂
+</strong>
+
+</div>
+
+
+<input
+id="birthdayInput"
+type="text"
+inputmode="numeric"
+placeholder="يوم-شهر-سنة"
+maxlength="10"
+>
+
+
+<br>
+
+
+<button id="checkBirthday">
+✨ فتح الهدية
+</button>
+
+
+<div
+id="error"
+class="error">
+</div>
+
+
+</div>
+
+
+
+<!-- =========================
+     FIRST SURPRISE
+========================= -->
+
+<div
+id="surprise"
+class="hidden">
+
+
+<div class="icon">
+🎉
+</div>
+
+
+<h1>
+عرفتج! 😂🤍
+</h1>
+
+
+<div class="subtitle">
+
+واضح إن الهدية وصلت للشخص الصح...
+
+<br>
+
+خوش، هسه نكدر نفتحها 😌🎁
+
+</div>
+
+
+<button id="openGift">
+🎀 افتحي هديتج
+</button>
+
+
+</div>
+
+
+
+<!-- =========================
+     MAIN MESSAGE
+========================= -->
+
+<div
+id="message"
+class="hidden">
+
+
+<div class="icon">
+🎂
+</div>
+
+
+<h1>
+كل عام وانتي بخير شمس 🤍
+</h1>
+
+
+<div class="message">
+
+
+كل عام وانتي بخير 🤍🎂
+
+
+<br><br>
+
+
+حبيت أكون من الناس اللي يتمنولج يوم حلو بهالمناسبة، وإن شاء الله تكون سنتج الجديدة مليانة راحة وفرح وأشياء حلوة تستحقينها.
+
+
+<br><br>
+
+
+رغم إن معرفتنا كانت عن طريق الإنترنت، بس بصراحة خوش صدفة إني تعرفت عليج، وأتمنى تبقى هالمعرفة من الأشياء الحلوة بهالسنة 😂🤍
+
+
+<br><br>
+
+
+استمتعي بيومج، واليوم ممنوع الزعل 😌🎀
+
+
+</div>
+
+
+
+<div class="highlight">
+
+🌷 أتمنى تكون هالسنة بداية لأيام أجمل،
+وضَحكات أكثر،
+وأشياء حلوة تصير فجأة ومن غير موعد.
+
+<br><br>
+
+وإن شاء الله تبقى ابتسامتج موجودة بكل أيام السنة 🤍
+
+</div>
+
+
+
+<div class="final">
+
+<strong>
+Happy Birthday Shams 🎂✨
+</strong>
+
+<br><br>
+
+صُنعت هذه الهدية بقليل من الكود 💻
+وكثير من الأمنيات الحلوة 🤍
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+<script>
+
+
+/* =========================
+   ELEMENTS
+========================= */
+
+const birthdayInput =
+document.getElementById("birthdayInput");
+
+const checkBirthday =
+document.getElementById("checkBirthday");
+
+const error =
+document.getElementById("error");
+
+const dateScreen =
+document.getElementById("dateScreen");
+
+const surprise =
+document.getElementById("surprise");
+
+const openGift =
+document.getElementById("openGift");
+
+const message =
+document.getElementById("message");
+
+
+/* =========================
+   CHECK BIRTHDAY
+========================= */
+
+checkBirthday.onclick = function() {
+
+    const entered =
+        birthdayInput.value.trim();
+
+
+    /*
+       Correct birthday:
+       05-09-2002
+    */
+
+    if (
+        entered === "05-09-2002" ||
+        entered === "5-9-2002" ||
+        entered === "05/09/2002" ||
+        entered === "5/9/2002"
+    ) {
+
+        dateScreen.classList.add("hidden");
+
+        surprise.classList.remove("hidden");
+
+    }
+
+    else {
+
+        error.innerHTML =
+        "هممم 🤔 التاريخ مو صحيح... حاولي مرة ثانية 😂🤍";
+
+        birthdayInput.value = "";
+
+    }
+
+};
+
+
+
+/* =========================
+   OPEN GIFT
+========================= */
+
+openGift.onclick = function() {
+
+    surprise.classList.add("hidden");
+
+    message.classList.remove("hidden");
+
+    createConfetti();
+
+};
+
+
+
+/* =========================
+   ENTER KEY
+========================= */
+
+birthdayInput.addEventListener(
+    "keydown",
+    function(event) {
+
+        if(event.key === "Enter") {
+
+            checkBirthday.click();
+
+        }
+
+    }
+);
+
+
+
+/* =========================
+   CONFETTI
+========================= */
+
+function createConfetti() {
+
+    const emojis = [
+
+        "🎉",
+        "🎀",
+        "🤍",
+        "✨",
+        "🌷",
+        "🎂",
+        "🥳",
+        "💗"
+
+    ];
+
+
+    for(let i = 0; i < 50; i++) {
+
+        const item =
+        document.createElement("div");
+
+
+        item.className =
+        "confetti";
+
+
+        item.innerText =
+        emojis[
+            Math.floor(
+                Math.random() *
+                emojis.length
+            )
+        ];
+
+
+        item.style.left =
+        Math.random() * 100 + "vw";
+
+
+        item.style.fontSize =
+        (14 + Math.random() * 18) + "px";
+
+
+        item.style.animationDuration =
+        (3 + Math.random() * 4) + "s";
+
+
+        document.body.appendChild(item);
+
+
+        setTimeout(
+            function() {
+
+                item.remove();
+
+            },
+            8000
+        );
+
+    }
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
