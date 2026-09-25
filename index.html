@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shams Dental Birthday 🦷🎀</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #fff7fb, #eef9ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+}
+
+/* MAIN CARD */
+
+.card {
+    background: rgba(255,255,255,0.94);
+    border-radius: 30px;
+    padding: 30px 22px;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.12);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* TOP */
+
+.logo {
+    font-size: 58px;
+    margin-bottom: 5px;
+}
+
+.clinic {
+    font-size: 25px;
+    font-weight: bold;
+    color: #6b536b;
+}
+
+.subtitle {
+    color: #888;
+    margin-top: 8px;
+}
+
+/* PATIENT */
+
+.patient {
+    margin-top: 25px;
+    background: #fff5fa;
+    border-radius: 18px;
+    padding: 18px;
+    text-align: right;
+}
+
+.patient-title {
+    font-size: 13px;
+    color: #999;
+}
+
+.patient-name {
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.status {
+    margin-top: 8px;
+    color: #777;
+}
+
+/* BUTTON */
+
+button {
+    margin-top: 25px;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 28px;
+    background: #e8d6e9;
+    color: #463747;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.04);
+}
+
+/* EXAMINATION */
+
+.hidden {
+    display: none;
+}
+
+.exam {
+    margin-top: 25px;
+    text-align: right;
+}
+
+.test {
+    background: #f8fbff;
+    border-radius: 18px;
+    padding: 17px;
+    margin-bottom: 12px;
+    border: 1px solid #edf0f5;
+}
+
+.test-title {
+    font-weight: bold;
+}
+
+.result {
+    margin-top: 7px;
+    color: #777;
+}
+
+/* DIAGNOSIS */
+
+.diagnosis {
+    margin-top: 25px;
+    background: linear-gradient(135deg,#fff0f7,#f2f9ff);
+    border-radius: 22px;
+    padding: 22px;
+}
+
+.diagnosis h2 {
+    font-size: 22px;
+}
+
+.diagnosis-text {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* PRESCRIPTION */
+
+.prescription {
+    margin-top: 22px;
+    background: white;
+    border: 2px dashed #e4cde0;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.prescription h3 {
+    margin-top: 0;
+    font-size: 21px;
+}
+
+.prescription p {
+    line-height: 1.9;
+}
+
+/* FINAL */
+
+.final {
+    margin-top: 25px;
+}
+
+.final h1 {
+    font-size: 28px;
+}
+
+.message {
+    line-height: 2;
+    font-size: 16px;
+}
+
+.footer {
+    margin-top: 25px;
+    color: #999;
+    font-size: 12px;
+}
+
+/* FLOATING EMOJIS */
+
+.float {
+    position: absolute;
+    font-size: 22px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+}
+
+/* CONFETTI */
+
+.confetti {
+    position: fixed;
+    top: -20px;
+    animation: fall linear forwards;
+    pointer-events: none;
+}
+
+@keyframes fall {
+
+    to {
+        transform: translateY(110vh) rotate(720deg);
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<span class="float" style="left:8%;top:7%;">🦷</span>
+<span class="float" style="right:9%;top:10%;animation-delay:.5s;">🎀</span>
+<span class="float" style="left:12%;bottom:12%;animation-delay:1s;">🤍</span>
+<span class="float" style="right:10%;bottom:15%;animation-delay:.7s;">✨</span>
+
+
+<!-- CLINIC -->
+
+<div id="clinic">
+
+<div class="logo">
+🦷
+</div>
+
+<div class="clinic">
+SHAMS DENTAL CLINIC
+</div>
+
+<div class="subtitle">
+Special Birthday Examination 🎀
+</div>
+
+
+<div class="patient">
+
+<div class="patient-title">
+PATIENT
+</div>
+
+<div class="patient-name">
+Shams 🤍
+</div>
+
+<div class="status">
+Status: Birthday Girl 🎂
+</div>
+
+</div>
+
+
+<button id="start">
+🩺 Start Examination
+</button>
+
+</div>
+
+
+
+<!-- EXAMINATION -->
+
+<div id="examination" class="hidden">
+
+<div class="logo">
+🩺
+</div>
+
+<h2>
+Patient Examination
+</h2>
+
+<div class="exam">
+
+
+<div class="test">
+
+<div class="test-title">
+🦷 Checking smile...
+</div>
+
+<div class="result">
+Result: 100% beautiful ✨
+</div>
+
+</div>
+
+
+<div class="test">
+
+<div class="test-title">
+😁 Checking happiness...
+</div>
+
+<div class="result">
+Result: Needs more cake 🎂
+</div>
+
+</div>
+
+
+<div class="test">
+
+<div class="test-title">
+🤍 Checking kindness...
+</div>
+
+<div class="result">
+Result: Extremely high
+</div>
+
+</div>
+
+
+<div class="test">
+
+<div class="test-title">
+📚 Checking study level...
+</div>
+
+<div class="result">
+Result: Too much studying detected 😂
+</div>
+
+</div>
+
+</div>
+
+
+<button id="diagnose">
+🔬 Show Diagnosis
+</button>
+
+</div>
+
+
+
+<!-- DIAGNOSIS -->
+
+<div id="diagnosis" class="hidden">
+
+<div class="logo">
+🚨
+</div>
+
+<div class="diagnosis">
+
+<h2>
+FINAL DIAGNOSIS
+</h2>
+
+<div class="diagnosis-text">
+
+<strong>
+Acute Birthday Happiness
+</strong>
+
+<br><br>
+
+The patient Shams is experiencing an unusually high level of happiness, cuteness and birthday vibes. 😂🎀
+
+<br><br>
+
+<strong>
+No treatment is required...
+</strong>
+
+<br>
+
+except cake, smiles and a very happy birthday. 🎂🤍
+
+</div>
+
+</div>
+
+
+<div class="prescription">
+
+<h3>
+📝 Birthday Prescription
+</h3>
+
+<p>
+
+🎂 One birthday cake<br>
+
+😁 2,000 beautiful smiles<br>
+
+🤍 Zero sad days<br>
+
+✨ Unlimited reasons to be happy<br>
+
+📚 And absolutely no studying for today!
+
+</p>
+
+</div>
+
+
+<button id="prescription">
+💊 Take Your Birthday Dose
+</button>
+
+</div>
+
+
+
+<!-- FINAL MESSAGE -->
+
+<div id="final" class="hidden final">
+
+<div class="logo">
+🎂
+</div>
+
+<h1>
+Happy Birthday Shams 🤍
+</h1>
+
+<div class="message">
+
+أتمنى تكون سنتج الجديدة مليانة فرح وراحة وأيام حلوة، وتحققين بيها كلشي تتمنيه. 🤍
+
+<br><br>
+
+وبما إنج طالبة طب أسنان، حاولت أسوي لج فحص طبي خاص 😂🦷
+
+والحمد لله النتائج كلها ممتازة، بس طلع عندج نقص حاد بـ <strong>الكعك والسعادة</strong>، والعلاج واضح جدًا 😂🎂
+
+<br><br>
+
+كل عام وانتي بخير شمس، وإن شاء الله تبقى ابتسامتج حلوة دائمًا مثل ما هي اليوم. 🎀🤍
+
+</div>
+
+
+<div class="footer">
+
+Prescription prepared specially for Shams 🦷🤍<br>
+Made with a little bit of code 💻
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<script>
+
+/* START EXAMINATION */
+
+document.getElementById("start").onclick = function() {
+
+    document.getElementById("clinic")
+    .classList.add("hidden");
+
+    document.getElementById("examination")
+    .classList.remove("hidden");
+
+};
+
+
+/* SHOW DIAGNOSIS */
+
+document.getElementById("diagnose").onclick = function() {
+
+    document.getElementById("examination")
+    .classList.add("hidden");
+
+    document.getElementById("diagnosis")
+    .classList.remove("hidden");
+
+};
+
+
+/* FINAL SURPRISE */
+
+document.getElementById("prescription").onclick = function() {
+
+    document.getElementById("diagnosis")
+    .classList.add("hidden");
+
+    document.getElementById("final")
+    .classList.remove("hidden");
+
+    createConfetti();
+
+};
+
+
+/* CONFETTI */
+
+function createConfetti() {
+
+    const emojis = [
+        "🎉",
+        "🎀",
+        "🤍",
+        "🦷",
+        "✨",
+        "🎂",
+        "🥳"
+    ];
+
+    for(let i = 0; i < 45; i++) {
+
+        const confetti =
+        document.createElement("div");
+
+        confetti.className =
+        "confetti";
+
+        confetti.innerText =
+        emojis[
+            Math.floor(
+                Math.random() * emojis.length
+            )
+        ];
+
+        confetti.style.left =
+        Math.random() * 100 + "vw";
+
+        confetti.style.fontSize =
+        (15 + Math.random() * 18) + "px";
+
+        confetti.style.animationDuration =
+        (3 + Math.random() * 4) + "s";
+
+        document.body.appendChild(confetti);
+
+
+        setTimeout(function() {
+
+            confetti.remove();
+
+        }, 8000);
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
